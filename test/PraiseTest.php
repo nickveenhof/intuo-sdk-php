@@ -26,22 +26,24 @@ class PraiseTest extends TestBase
         $handler->after('intuo_api_token', $testFunction);
     }
 
-    public function testGoalQuery()
+    public function testPraisesQuery()
     {
         $data = [
-          [
-            'id' => 10,
-            'sender_id' => 11,
-            'receiver_id' => 12,
-            'team_id' => null,
-            'performance_driver_ids' => [
-              'performance-driver-id-1',
+          'praises' => [
+            [
+              'id' => 10,
+              'sender_id' => 11,
+              'receiver_id' => 12,
+              'team_id' => null,
+              'performance_driver_ids' => [
+                'performance-driver-id-1',
+              ],
+              'text_content' => 'text-description',
+              'bucket_id' => 20,
+              'likes_count' => 30,
+              'comment_count' => 100,
             ],
-            'text_content' => 'text-description',
-            'bucket_id' => 20,
-            'likes_count' => 30,
-            'comment_count' => 100,
-          ],
+          ]
         ];
 
         $response = new Response(200, [], json_encode($data));
@@ -123,17 +125,19 @@ class PraiseTest extends TestBase
     {
         // Setup
         $data = [
-          'id' => 10,
-          'sender_id' => 11,
-          'receiver_id' => 12,
-          'team_id' => null,
-          'performance_driver_ids' => [
-            'performance-driver-id-1',
-          ],
-          'text_content' => 'text-description',
-          'bucket_id' => 20,
-          'likes_count' => 30,
-          'comment_count' => 100,
+          'praise' => [
+            'id' => 10,
+            'sender_id' => 11,
+            'receiver_id' => 12,
+            'team_id' => null,
+            'performance_driver_ids' => [
+              'performance-driver-id-1',
+            ],
+            'text_content' => 'text-description',
+            'bucket_id' => 20,
+            'likes_count' => 30,
+            'comment_count' => 100,
+          ]
         ];
 
         $response = new Response(200, [], json_encode($data));

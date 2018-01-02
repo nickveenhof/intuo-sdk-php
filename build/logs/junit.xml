@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Intuo" tests="28" assertions="68" failures="0" errors="0" time="0.018788">
-    <testsuite name="NickVeenhof\IntuoClient\Test\Entity\EntityTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/EntityTest.php" tests="2" assertions="2" failures="0" errors="0" time="0.002847">
-      <testcase name="testgetEntityValue" class="NickVeenhof\IntuoClient\Test\Entity\EntityTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/EntityTest.php" line="10" assertions="1" time="0.000605"/>
-      <testcase name="testJson" class="NickVeenhof\IntuoClient\Test\Entity\EntityTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/EntityTest.php" line="20" assertions="1" time="0.002242"/>
+  <testsuite name="Intuo" tests="28" assertions="68" failures="0" errors="0" time="0.038776">
+    <testsuite name="NickVeenhof\IntuoClient\Test\Entity\EntityTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/EntityTest.php" tests="2" assertions="2" failures="0" errors="0" time="0.006777">
+      <testcase name="testgetEntityValue" class="NickVeenhof\IntuoClient\Test\Entity\EntityTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/EntityTest.php" line="10" assertions="1" time="0.001334"/>
+      <testcase name="testJson" class="NickVeenhof\IntuoClient\Test\Entity\EntityTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/EntityTest.php" line="20" assertions="1" time="0.005443"/>
     </testsuite>
-    <testsuite name="NickVeenhof\IntuoClient\Test\Entity\ErrorTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/ErrorTest.php" tests="1" assertions="2" failures="0" errors="0" time="0.000199">
-      <testcase name="testCodeAndMessage" class="NickVeenhof\IntuoClient\Test\Entity\ErrorTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/ErrorTest.php" line="9" assertions="2" time="0.000199"/>
+    <testsuite name="NickVeenhof\IntuoClient\Test\Entity\ErrorTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/ErrorTest.php" tests="1" assertions="2" failures="0" errors="0" time="0.000475">
+      <testcase name="testCodeAndMessage" class="NickVeenhof\IntuoClient\Test\Entity\ErrorTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/ErrorTest.php" line="9" assertions="2" time="0.000475"/>
     </testsuite>
-    <testsuite name="NickVeenhof\IntuoClient\Test\Entity\IntuoErrorTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/IntuoErrorTest.php" tests="1" assertions="4" failures="0" errors="0" time="0.001576">
-      <testcase name="testCodeAndMessage" class="NickVeenhof\IntuoClient\Test\Entity\IntuoErrorTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/IntuoErrorTest.php" line="9" assertions="4" time="0.001576"/>
+    <testsuite name="NickVeenhof\IntuoClient\Test\Entity\IntuoErrorTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/IntuoErrorTest.php" tests="1" assertions="4" failures="0" errors="0" time="0.004371">
+      <testcase name="testCodeAndMessage" class="NickVeenhof\IntuoClient\Test\Entity\IntuoErrorTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/IntuoErrorTest.php" line="9" assertions="4" time="0.004371"/>
     </testsuite>
-    <testsuite name="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" tests="18" assertions="27" failures="0" errors="0" time="0.003384">
-      <testcase name="testId" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="10" assertions="1" time="0.000406"/>
-      <testcase name="testIdNoNumeric" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="21" assertions="2" time="0.000540"/>
-      <testcase name="testSenderId" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="27" assertions="1" time="0.000113"/>
-      <testcase name="testSenderIdNoNumeric" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="38" assertions="2" time="0.000124"/>
-      <testcase name="testReceiverId" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="44" assertions="1" time="0.000100"/>
-      <testcase name="testReceiverIdNoNumeric" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="55" assertions="2" time="0.000115"/>
-      <testcase name="testTeamId" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="61" assertions="1" time="0.000084"/>
-      <testcase name="testTeamIdNoNumeric" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="72" assertions="2" time="0.000203"/>
-      <testcase name="testPerformanceDriverIds" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="78" assertions="1" time="0.000367"/>
-      <testcase name="testPerformanceDriverIdsArrayTwoLevels" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="89" assertions="2" time="0.000178"/>
-      <testcase name="testTextContent" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="95" assertions="1" time="0.000097"/>
-      <testcase name="testTextContentNoString" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="106" assertions="2" time="0.000129"/>
-      <testcase name="testBucketId" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="112" assertions="1" time="0.000099"/>
-      <testcase name="testBucketIdNoNumeric" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="123" assertions="2" time="0.000136"/>
-      <testcase name="testLikesCount" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="129" assertions="1" time="0.000107"/>
-      <testcase name="testLikesCountNoNumeric" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="140" assertions="2" time="0.000139"/>
-      <testcase name="testCommentsCount" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="146" assertions="1" time="0.000173"/>
-      <testcase name="testCommentCountNoNumeric" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="157" assertions="2" time="0.000274"/>
+    <testsuite name="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" tests="18" assertions="27" failures="0" errors="0" time="0.005342">
+      <testcase name="testId" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="10" assertions="1" time="0.000610"/>
+      <testcase name="testIdNoNumeric" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="21" assertions="2" time="0.001338"/>
+      <testcase name="testSenderId" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="27" assertions="1" time="0.000170"/>
+      <testcase name="testSenderIdNoNumeric" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="38" assertions="2" time="0.000169"/>
+      <testcase name="testReceiverId" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="44" assertions="1" time="0.000096"/>
+      <testcase name="testReceiverIdNoNumeric" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="55" assertions="2" time="0.000130"/>
+      <testcase name="testTeamId" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="61" assertions="1" time="0.000092"/>
+      <testcase name="testTeamIdNoNumeric" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="72" assertions="2" time="0.000209"/>
+      <testcase name="testPerformanceDriverIds" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="78" assertions="1" time="0.000876"/>
+      <testcase name="testPerformanceDriverIdsArrayTwoLevels" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="89" assertions="2" time="0.000300"/>
+      <testcase name="testTextContent" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="95" assertions="1" time="0.000144"/>
+      <testcase name="testTextContentNoString" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="106" assertions="2" time="0.000200"/>
+      <testcase name="testBucketId" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="112" assertions="1" time="0.000237"/>
+      <testcase name="testBucketIdNoNumeric" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="123" assertions="2" time="0.000162"/>
+      <testcase name="testLikesCount" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="129" assertions="1" time="0.000134"/>
+      <testcase name="testLikesCountNoNumeric" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="140" assertions="2" time="0.000131"/>
+      <testcase name="testCommentsCount" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="146" assertions="1" time="0.000139"/>
+      <testcase name="testCommentCountNoNumeric" class="NickVeenhof\IntuoClient\Test\Entity\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/Entity/PraiseTest.php" line="157" assertions="2" time="0.000205"/>
     </testsuite>
-    <testsuite name="NickVeenhof\IntuoClient\Test\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/PraiseTest.php" tests="5" assertions="30" failures="0" errors="0" time="0.010698">
-      <testcase name="testHandlerStack" class="NickVeenhof\IntuoClient\Test\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/PraiseTest.php" line="10" assertions="0" time="0.005098"/>
-      <testcase name="testGoalQuery" class="NickVeenhof\IntuoClient\Test\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/PraiseTest.php" line="29" assertions="13" time="0.004032"/>
-      <testcase name="testPraiseQueryFailed" class="NickVeenhof\IntuoClient\Test\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/PraiseTest.php" line="107" assertions="2" time="0.000990"/>
-      <testcase name="testPraiseGet" class="NickVeenhof\IntuoClient\Test\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/PraiseTest.php" line="122" assertions="13" time="0.000336"/>
-      <testcase name="testPraiseGetFailed" class="NickVeenhof\IntuoClient\Test\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/PraiseTest.php" line="194" assertions="2" time="0.000242"/>
+    <testsuite name="NickVeenhof\IntuoClient\Test\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/PraiseTest.php" tests="5" assertions="30" failures="0" errors="0" time="0.021714">
+      <testcase name="testHandlerStack" class="NickVeenhof\IntuoClient\Test\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/PraiseTest.php" line="10" assertions="0" time="0.011563"/>
+      <testcase name="testPraisesQuery" class="NickVeenhof\IntuoClient\Test\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/PraiseTest.php" line="29" assertions="13" time="0.006966"/>
+      <testcase name="testPraiseQueryFailed" class="NickVeenhof\IntuoClient\Test\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/PraiseTest.php" line="109" assertions="2" time="0.002524"/>
+      <testcase name="testPraiseGet" class="NickVeenhof\IntuoClient\Test\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/PraiseTest.php" line="124" assertions="13" time="0.000348"/>
+      <testcase name="testPraiseGetFailed" class="NickVeenhof\IntuoClient\Test\PraiseTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/PraiseTest.php" line="198" assertions="2" time="0.000313"/>
     </testsuite>
-    <testsuite name="NickVeenhof\IntuoClient\Test\UtilityTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/UtilityTest.php" tests="1" assertions="3" failures="0" errors="0" time="0.000084">
-      <testcase name="testArrayDepth" class="NickVeenhof\IntuoClient\Test\UtilityTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/UtilityTest.php" line="9" assertions="3" time="0.000084"/>
+    <testsuite name="NickVeenhof\IntuoClient\Test\UtilityTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/UtilityTest.php" tests="1" assertions="3" failures="0" errors="0" time="0.000097">
+      <testcase name="testArrayDepth" class="NickVeenhof\IntuoClient\Test\UtilityTest" file="/Users/nickveenhof/Servers/intuo-sdk-php/test/UtilityTest.php" line="9" assertions="3" time="0.000097"/>
     </testsuite>
   </testsuite>
 </testsuites>

@@ -2,30 +2,27 @@
 
 namespace NickVeenhof\IntuoClient\Manager;
 
-use NickVeenhof\IntuoClient\Entity\Praise;
+use NickVeenhof\IntuoClient\Entity\Team;
 use NickVeenhof\IntuoClient\Exception\IntuoSdkException;
 use GuzzleHttp\Psr7\Request;
 
-class PraiseManager extends ManagerBase
+class TeamManager extends ManagerBase
 {
   /**
    * {@inheritdoc}
    */
   protected $queryParameters = [
-    'page' => 0,
-    'per_page' => 25,
-    'start_date' => null,
-    'end_date' => null,
+    'archived' => false,
+    'team_type' => null,
   ];
 
   /**
-   * Get a list of Praises.
+   * Get a list of teams.
    *
    * Example of how to structure the $options parameter:
    * <code>
    * $options = [
-   *     'page'  => 1,
-   *     'per_page'  => 25,
+   *     'archived'  => false,
    * ];
    * </code>
    *
@@ -35,28 +32,28 @@ class PraiseManager extends ManagerBase
    *
    * @throws \GuzzleHttp\Exception\RequestException
    *
-   * @return \NickVeenhof\IntuoClient\Entity\Praise[]
+   * @return \NickVeenhof\IntuoClient\Entity\Team[]
    */
   public function query($options = [])
   {
-    $url = '/public/praises';
+    $url = '/public/teams';
     $url .= $this->getQueryString($options);
 
     // Now make the request.
     $request = new Request('GET', $url);
     $data = $this->getResponseJson($request);
 
-    // Get them as Praise objects
-    $praises = [];
-    foreach ($data['praises'] as $dataItem) {
-      $praises[] = new Praise($dataItem);
+    // Get them as User objects
+    $users = [];
+    foreach ($data['teams'] as $dataItem) {
+      $users[] = new Team($dataItem);
     }
 
-    return $praises;
+    return $users;
   }
 
   /**
-   * Get a specific praise.
+   * Get a specific team.
    *
    * @see https://intuo.readme.io/v1.0/reference#praisesid
    *
@@ -64,16 +61,16 @@ class PraiseManager extends ManagerBase
    *
    * @throws \GuzzleHttp\Exception\RequestException
    *
-   * @return \NickVeenhof\IntuoClient\Entity\Praise
+   * @return \NickVeenhof\IntuoClient\Entity\Team
    */
   public function get($id)
   {
-    $url = "/public/praises/{$id}";
+    $url = "/public/users/{$id}";
 
     // Now make the request.
     $request = new Request('GET', $url);
-    $data = $this->getResponseJson($request);
+    $data = $this->getResponseJson($request['team']);
 
-    return new Praise($data['praise']);
+    return new Team($data);
   }
 }
