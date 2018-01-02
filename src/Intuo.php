@@ -18,7 +18,7 @@ class Intuo
     /**
      * Constructor.
      *
-     * @param string $api_token The Lift Web Account Identifier. Eg.: MYACCOUNT
+     * @param string $api_token The Intuo API Token. Eg.: abcdef
      * @param array  $config     Additional configs
      */
     public function __construct(
@@ -47,7 +47,7 @@ class Intuo
     }
 
     /**
-     * Get a handler that adds lift account id and site id.
+     * Get a handler that adds intuo api token
      *
      * @param string $api_token    The Intuo Api Token
      * @return \Closure The handler that adds Intuo token to the request
@@ -60,7 +60,7 @@ class Intuo
               RequestInterface $request,
               array $options
             ) use ($handler, $api_token) {
-                $request->withAddedHeader('X-Public-Token', $api_token);
+                $request = $request->withAddedHeader('X-Public-Token', $api_token);
                 return $handler($request, $options);
             };
         };
