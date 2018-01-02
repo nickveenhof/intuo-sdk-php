@@ -1,0 +1,41 @@
+{
+    "name": "nickveenhof/intuo-sdk-php",
+    "type": "library",
+    "description": "A PHP Client library to consume the Intuo API.",
+    "homepage": "https://github.com/nickveenhof/intuo-sdk-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "See Contributors",
+            "homepage": "https://github.com/nickveenhof/intuo-sdk-php/graphs/contributors"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/nickveenhof/intuo-sdk-php/issues"
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "guzzlehttp/guzzle": "~6.0",
+        "symfony/serializer": "~2.7|^3.2",
+        "symfony/http-foundation": "~2.7|^3.2"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "~1.0",
+        "pdepend/pdepend": "~1.0",
+        "phploc/phploc": "~2.0",
+        "phpmd/phpmd": "~1.0",
+        "phpunit/phpunit": ">=4.8.35 <5",
+        "scrutinizer/ocular": "~1.0",
+        "sebastian/phpcpd": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NickVeenhof\\IntuoClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NickVeenhof\\IntuoClient\\Test\\": "test/"
+        }
+    }
+}
