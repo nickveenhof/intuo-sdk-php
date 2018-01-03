@@ -2,6 +2,7 @@
 
 namespace NickVeenhof\IntuoClient\Entity;
 
+use DateTime;
 use NickVeenhof\IntuoClient\Exception\IntuoSdkException;
 use NickVeenhof\IntuoClient\Utility\Utility;
 
@@ -167,6 +168,37 @@ class Praise extends Entity
     return $this->getEntityValue('performance_driver_ids', []);
   }
 
+  /**
+   * Sets the 'liker_ids' parameter.
+   *
+   * @param array $performanceDriverIds
+   *
+   * @throws \NickVeenhof\IntuoClient\Exception\IntuoSdkException
+   *
+   * @return \NickVeenhof\IntuoClient\Entity\Praise
+   */
+  public function setLikerIds(array $performanceDriverIds)
+  {
+    if (Utility::arrayDepth($performanceDriverIds) > 1) {
+      throw new IntuoSdkException('Liker Ids argument is more than 1 level deep.');
+    }
+
+    // Set only the array values to the rule_ids property.
+    $this['liker_ids'] = array_values($performanceDriverIds);
+
+    return $this;
+  }
+
+  /**
+   * Gets the 'liker_ids' parameter.
+   *
+   * @return array The Liker Ids
+   */
+  public function getLikerIds()
+  {
+    return $this->getEntityValue('liker_ids', []);
+  }
+
 
   /**
    * Sets the 'text_content' parameter.
@@ -283,6 +315,22 @@ class Praise extends Entity
   public function getCommentCount()
   {
     return $this->getEntityValue('comment_count', '');
+  }
+
+  /**
+   * Gets the 'created_at' parameter.
+   *
+   * @return DateTime|false
+   */
+  public function getCreatedAt()
+  {
+    $date = $this->getEntityValue('created_at', 0);
+    // The ISO8601 DateTime format is not compatible with ISO-8601, but is left this way for backward compatibility
+    // reasons. Use DateTime::ATOM or DATE_ATOM for compatibility with ISO-8601 instead.
+    // See http://php.net/manual/en/class.datetime.php
+    $datetime = DateTime::createFromFormat(DateTime::ATOM, $date);
+
+    return $datetime;
   }
 
 
