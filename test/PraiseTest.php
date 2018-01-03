@@ -43,6 +43,9 @@ class PraiseTest extends TestBase
               'likes_count' => 30,
               'comment_count' => 100,
             ],
+          ],
+          'meta' => [
+            'pages' => 0,
           ]
         ];
 
@@ -68,8 +71,10 @@ class PraiseTest extends TestBase
 
         $requestHeaders = $request->getHeaders();
         $this->assertEquals($requestHeaders['Content-Type'][0], 'application/json');
-      $requestHeaders = $request->getHeaders();
-      $this->assertEquals($requestHeaders['Accept'][0], 'application/json; version=1');
+        $requestHeaders = $request->getHeaders();
+        $this->assertEquals($requestHeaders['Accept'][0], 'application/json; version=1');
+
+        unset($responses['meta']);
 
         // Check for response basic fields
         foreach ($responses as $response) {
