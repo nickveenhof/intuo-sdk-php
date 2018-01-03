@@ -50,6 +50,7 @@ abstract class ManagerBase
     protected function getResponseJson(RequestInterface $request)
     {
         $response = $this->client->send($request);
+
         $body = (string) $response->getBody();
 
         return json_decode($body, true);

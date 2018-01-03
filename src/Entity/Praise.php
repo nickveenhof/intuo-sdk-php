@@ -6,7 +6,8 @@ use NickVeenhof\IntuoClient\Exception\IntuoSdkException;
 use NickVeenhof\IntuoClient\Utility\Utility;
 
 class Praise extends Entity
-{
+
+  {
   /**
    * @param array $array
    */

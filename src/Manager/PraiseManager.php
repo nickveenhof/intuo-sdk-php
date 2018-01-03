@@ -52,6 +52,8 @@ class PraiseManager extends ManagerBase
       $praises[] = new Praise($dataItem);
     }
 
+    $praises['meta'] = $data['meta'];
+
     return $praises;
   }
 
@@ -60,7 +62,7 @@ class PraiseManager extends ManagerBase
    *
    * @see https://intuo.readme.io/v1.0/reference#praisesid
    *
-   * @param array $id
+   * @param int $id
    *
    * @throws \GuzzleHttp\Exception\RequestException
    *

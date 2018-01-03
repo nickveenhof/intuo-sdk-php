@@ -57,7 +57,7 @@ class TeamManager extends ManagerBase
    *
    * @see https://intuo.readme.io/v1.0/reference#praisesid
    *
-   * @param array $id
+   * @param int $id
    *
    * @throws \GuzzleHttp\Exception\RequestException
    *
@@ -69,8 +69,8 @@ class TeamManager extends ManagerBase
 
     // Now make the request.
     $request = new Request('GET', $url);
-    $data = $this->getResponseJson($request['team']);
+    $data = $this->getResponseJson($request);
 
-    return new Team($data);
+    return new Team($data['team']);
   }
 }

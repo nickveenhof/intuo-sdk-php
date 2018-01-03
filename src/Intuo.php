@@ -6,6 +6,9 @@ use NickVeenhof\IntuoClient\Manager\PraiseManager;
 use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Request;
+use NickVeenhof\IntuoClient\Manager\TeamManager;
+use NickVeenhof\IntuoClient\Manager\TeamMembershipManager;
+use NickVeenhof\IntuoClient\Manager\UserManager;
 use Psr\Http\Message\RequestInterface;
 
 class Intuo
@@ -75,5 +78,35 @@ class Intuo
     {
         return new PraiseManager($this->authenticatedClient);
     }
+
+  /**
+   * Get the Team Manager.
+   *
+   * @return \NickVeenhof\IntuoClient\Manager\TeamManager
+   */
+  public function getTeamManager()
+  {
+    return new TeamManager($this->authenticatedClient);
+  }
+
+  /**
+   * Get the Team Membership Manager.
+   *
+   * @return \NickVeenhof\IntuoClient\Manager\TeamMembershipManager
+   */
+  public function getTeamMembershipManager()
+  {
+    return new TeamMembershipManager($this->authenticatedClient);
+  }
+
+  /**
+   * Get the User Manager.
+   *
+   * @return \NickVeenhof\IntuoClient\Manager\UserManager
+   */
+  public function getUserManager()
+  {
+    return new UserManager($this->authenticatedClient);
+  }
 
 }

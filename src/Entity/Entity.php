@@ -6,7 +6,7 @@ use Symfony\Component\Serializer\Encoder\JsonEncoder;
 use Symfony\Component\Serializer\Normalizer\CustomNormalizer;
 use Symfony\Component\Serializer\Serializer;
 
-class Entity extends \ArrayObject
+class Entity extends \ArrayObject implements \JsonSerializable
 {
     /**
      * @param string                      $key
@@ -31,5 +31,9 @@ class Entity extends \ArrayObject
         $serializer = new Serializer($normalizers, $encoders);
 
         return $serializer->serialize($this, 'json');
+    }
+
+    public function jsonSerialize() {
+      return $this->json();
     }
 }
