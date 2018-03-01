@@ -106,6 +106,16 @@ class Praise extends Entity
 
     return $this;
   }
+  
+  /**
+   * Gets the 'additional_receiver_ids' parameter.
+   *
+   * @return array The Additional Receiver Identifiers
+   */
+  public function getAdditionalReceiverIds()
+  {
+    return $this->getEntityValue('additional_receiver_ids', []);
+  }
 
   /**
    * Gets the 'team_id' parameter.
